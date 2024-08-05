@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <label for="num1">enter first number:</label>
+        <input type="text" class="first" id="num1"><br>
+        <label for="num2">enter second number:</label>
+        <input type="text" class="second" id="num2"><br>
+        <input type="text" class="ans"><br>
+        <button onclick="sum()">SUM</button>
+        <button onclick="sub()">SUBSTRACT</button>
+        <button onclick="pro()">PRODUCT</button>
+        <button onclick="div()">DIVISION</button>
+        <button onclick="mod()">MODULUS</button>
+        <button>CLEAR</button>
+        
+    </form>
+</body>
+<script>
+    function sum(){
+        a= document.getElementById("num1").value 
+        b= document.getElementById("num2").value 
+        s= parseInt(a)+parseInt(b)
+        alert("addition is " +s)
+    }
+    function sub(){
+        a= document.getElementById("num1").value 
+        b= document.getElementById("num2").value 
+        s= parseInt(a)-parseInt(b)
+        alert("substraction is " +s)
+    }
+    function pro(){
+        a= document.getElementById("num1").value 
+        b= document.getElementById("num2").value 
+        s= parseInt(a)*parseInt(b)
+        alert("product is " +s)
+    }
+    function div(){
+        a= document.getElementById("num1").value 
+        b= document.getElementById("num2").value 
+        s= parseInt(a)/parseInt(b)
+        alert("dividion is " +s)
+    }
+    function mod(){
+        a= document.getElementById("num1").value 
+        b= document.getElementById("num2").value 
+        s= parseInt(a)%parseInt(b)
+        alert("modular division is " +s)
+    }
+</script>
+</html>
