@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="head">hello</h1>
+    <p id="para">this is a cat</p>
+    <button id="btn" onclick="expand()">expand</button>
+    
+    
+</body>
+<script>
+    const expand =()=>{
+        let a = document.getElementById("btn").innerHTML;
+        if(a == ("expand") ){
+            document.getElementById("head").innerHTML=("hello world");
+            document.getElementById("para").innerHTML=("this is a cat and mat");
+            document.getElementById("btn").innerHTML = ("reduce") ;
+        }else{
+            document.getElementById("head").innerHTML=("hello ");
+            document.getElementById("para").innerHTML=("this is a cat");
+            document.getElementById("btn").innerHTML = ("expand") ;
+        }
+    }
+</script>
+</html>
