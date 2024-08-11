@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELIGIBLE TO VOTE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <label for="num">enter age:</label>
+        <input type="text" class="first" id="num"><br>
+        
+        <input type="text" class="ans"><br>
+        <button onclick="age()">CHECK</button>
+        <button>CLEAR</button>
+        
+    </form>
+</body>
+<script>
+    function age(){
+        n=document.getElementById("num").value 
+        if(parseInt(n)>=18){
+            alert("person is eligible to vote")
+        }else{
+            alert("person is not eligible to vote")
+        }
+    }
+</script>
+</html>
