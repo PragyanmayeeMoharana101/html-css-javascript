@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>digits</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <label for="num">ENTER NUMBER:</label>
+        <input type="text" class="first" id="num"><br>
+        
+        <input type="text" class="ans"><br>
+        <button onclick="first()">FIRST DIGIT</button>
+        <button onclick="second()">SECOND DIGIT</button>
+        <button onclick="third()">THIRD DIGIT</button>
+        <button class="clear">CLEAR</button>
+        
+    </form>
+</body>
+<script>
+    function first(){
+        n=document.getElementById("num").value 
+        a=parseInt(n/10)
+        f=parseInt(a)%10
+        b=parseInt(a/10)
+        alert("first digit " +b)
+
+    }
+    function second(){
+        n=document.getElementById("num").value 
+        a=parseInt(n/10)
+        f=parseInt(a)%10
+        alert("second digit is " +f)
+    }
+    function third(){
+        
+        n=document.getElementById("num").value 
+        f=parseInt(n)%10
+        alert("third or last digit is " +f)
+    }
+</script>
+</html>

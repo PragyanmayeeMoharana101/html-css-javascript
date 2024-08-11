@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUM OF DIGITS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <label for="num">enter number:</label>
+        <input type="text" class="first" id="num"><br>
+        
+        <input type="text" class="ans"><br>
+        <button onclick="digsum()">SUM</button>
+        <button>CLEAR</button>
+        
+    </form>
+</body>
+<script>
+    function digsum(){
+        n=document.getElementById("num").value 
+        c=n%10
+        a=parseInt(n/10)
+        f=parseInt(a)%10
+        b=parseInt(a/10)
+        s=c+f+b
+        alert("sum of digits is " +s)
+    }
+</script>
+</html>
