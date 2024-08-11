@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CELSIUS TO FAHRENHEIT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <label for="temp">temperature in celsius:</label> 
+        <input type="text" class="first" id="temp"><br>
+        
+        <input type="text" class="ans"><br>
+        <button onclick="temperature()">convert into fahrenheit</button>
+        <button>CLEAR</button>
+        
+    </form>
+</body>
+<script>
+    function temperature(){
+        t= document.getElementById("temp").value 
+        f= parseFloat(9/5*t+32)
+        alert("temperature in fahrenheit is " +f)
+    }
+</script>
+</html>
