@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MARK PERCENTAGE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <div class="center">
+            <label for="num1"> mark secured in physics:</label>
+            <input type="text" class="first" id="num1"><br>
+            <label for="num2">mark secured in maths:</label>
+            <input type="text" class="second" id="num2"><br>
+            <label for="num3">mark secured in chemistry:</label>
+            <input type="text" id="num3"><br>
+        </div>
+        <input type="text" class="ans"><br>
+        <button onclick="totalmark()">TOTAL MARK</button>
+        <button onclick="percent()">TOTAL PERCENTAGE</button>
+        <button>CLEAR</button>
+    </form>
+</body>
+<script>
+    function totalmark(){
+        a= document.getElementById("num1").value
+        b= document.getElementById("num2").value
+        c= document.getElementById("num3").value
+        s= parseInt(a)+parseInt(b)+parseInt(c)
+        alert("total mark secured is " +s)
+    }
+    function percent(){
+        a= document.getElementById("num1").value
+        b= document.getElementById("num2").value
+        c= document.getElementById("num3").value
+        s= parseInt(a)+parseInt(b)+parseInt(c)
+        p= s/300*100
+        alert("total percentage is " +p)
+    }
+</script>
+</html>
