@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+        function myfun(){
+            let a = document.getElementById('fname').value;
+            let b= document.getElementById('para');
+            
+            if(a===""){
+               b.innerHTML = "textbox should not be blank"; 
+            }else if(a.length>15 ){
+                b.innerHTML = " minimum length should be 3 and maximum length should be 15";  
+            }else if( a.length<3){
+                b.innerHTML = " minimum length should be 3 and maximum length should be 15";  
+            }else{
+                b.innerHTML= a;
+            }
+            for(let i =0; i<a.length; i++){
+                    if(a[i]===" "){
+                       b.innerHTML= "space is not allowed";
+                    }
+            } 
+
+            let c = document.getElementById('lname').value;
+            let d= document.getElementById('para1');
+            
+            if(c===""){
+               d.innerHTML = "textbox should not be blank"; 
+            }else if(c.length>15 ){
+                d.innerHTML = " minimum length should be 3 and maximum length should be 15";  
+            }else if( c.length<3){
+                d.innerHTML = " minimum length should be 3 and maximum length should be 15";  
+            }else{
+                d.innerHTML= c;
+            }
+            for(let i =0; i<a.length; i++){
+                    if(c[i]===" "){
+                       d.innerHTML= "space is not allowed";
+                    }
+            } 
+
+
+            let e = document.getElementById('street').value;
+            let f= document.getElementById('para2');
+            
+            if(e===""){
+               f.innerHTML = "textbox should not be blank"; 
+            }else if(e.length>15 ){
+                f.innerHTML = " minimum length should be 3 and maximum length should be 15";  
+            }else if( e.length<3){
+                f.innerHTML = " minimum length should be 3 and maximum length should be 15";  
+            }else{
+                f.innerHTML= e;
+            }
+            for(let i =0; i<e.length; i++){
+                    if(e[i]===" "){
+                       f.innerHTML= "space is not allowed";
+                    }
+            } 
+
+            let g = document.getElementById('town').value;
+            let h= document.getElementById('para3');
+            
+            if(g===""){
+               h.innerHTML = "textbox should not be blank"; 
+            }else if(g.length>15 ){
+                h.innerHTML = " minimum length should be 3 and maximum length should be 15";  
+            }else if( g.length<3){
+                h.innerHTML = " minimum length should be 3 and maximum length should be 15";  
+            }else{
+                h.innerHTML= g;
+            }
+            for(let i =0; i<g.length; i++){
+                    if(g[i]===" "){
+                       h.innerHTML= "space is not allowed";
+                    }
+            } 
+
+
+           
+        }
+    </script>
+    <form action="">
+        <h1>Contact Details</h1>
+        <div class="content">
+            <p>Please enter your personal details.</p>
+            <div class="elem">
+                <div class="one">
+                    <label for="fname">First name: *</label>
+                    <input type="text" id="fname">
+                    <span id="para"></span>
+                </div>
+                <div class="one">
+                    <label for="lname">Last name: *</label>
+                    <input type="text" id="lname">
+                    <span id="para1"></span>
+                </div>
+                <div class="one">
+                    <label for="street">Street address: </label>
+                    <input type="text" id="street">
+                    <span id="para2"></span>
+                </div>
+                <div class="one">
+                    <label for="town">Town/city: </label>
+                    <input type="text" id="town">
+                    <span id="para3"></span>
+                </div>
+                <div class="one">
+                    <label for="zip">Postcode/zip: </label>
+                    <input type="text" id="zip">
+                </div>
+                <div class="one">
+                    <label for="telephone">Telephone: </label>
+                    <input type="text" id="telephone">
+                </div>
+                <div class="one">
+                    <label for="mobile">Mobile: </label>
+                    <input type="text" id="mobile">
+                </div>
+                <div class="one">
+                    <label for="email">Email address: *</label>
+                    <input type="email" id="email">
+                </div>
+            </div>
+            <div class="end">
+                <p>Fields marked * are require</p>
+                <input type="button" value="submit" onclick="myfun()">
+            </div>
+            
+        </div>
+    </form>
+</body>
+</html>
